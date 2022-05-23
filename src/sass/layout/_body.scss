@@ -7,6 +7,11 @@
       margin-top: 0 !important;
     }
   }
+  &--full-h {
+    main {
+      height: 100vh;
+    }
+  }
   @include mq.mq($from: mobile, $until: tablet) {
     grid-template-columns: 1fr 95% 1fr;
   }
