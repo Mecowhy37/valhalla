@@ -1,0 +1,16 @@
+@use "../mq";
+@use "../abstracts" as *;
+nav {
+  @include mq.mq($from: mobile, $until: tablet) {
+    height: $mobile-nav-height;
+  }
+  @include mq.mq($from: tablet, $until: desktop) {
+    height: $tablet-nav-height;
+  }
+  @include mq.mq(desktop, $until: wide) {
+    height: $desktop-nav-height;
+  }
+  @include mq.mq($from: wide) {
+    height: $wide-nav-height;
+  }
+}

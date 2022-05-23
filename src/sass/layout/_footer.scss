@@ -1,0 +1,13 @@
+@use "../mq";
+@use "../abstracts" as *;
+
+footer {
+  @include mq.mq($from: mobile, $until: tablet) {
+  }
+  @include mq.mq($from: tablet, $until: desktop) {
+  }
+  @include mq.mq(desktop, $until: wide) {
+  }
+  @include mq.mq($from: wide) {
+  }
+}

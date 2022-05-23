@@ -1,0 +1,20 @@
+@use "../mq";
+@use "../abstracts/" as *;
+.layout {
+  display: grid;
+  &--no-nav {
+    margin-top: 0 !important;
+  }
+  @include mq.mq($from: mobile, $until: tablet) {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+  @include mq.mq($from: tablet, $until: desktop) {
+    grid-template-columns: 1fr 85% 1fr;
+  }
+  @include mq.mq(desktop, $until: wide) {
+    grid-template-columns: 1fr 75% 1fr;
+  }
+  @include mq.mq($from: wide) {
+    grid-template-columns: 1fr 65% 1fr;
+  }
+}
