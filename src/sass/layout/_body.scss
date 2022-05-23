@@ -3,7 +3,9 @@
 .layout {
   display: grid;
   &--no-nav {
-    margin-top: 0 !important;
+    main {
+      margin-top: 0 !important;
+    }
   }
   @include mq.mq($from: mobile, $until: tablet) {
     grid-template-columns: 1fr 95% 1fr;
