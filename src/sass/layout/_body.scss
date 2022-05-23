@@ -4,12 +4,8 @@
   display: grid;
   &--no-nav {
     main {
-      margin-top: 0 !important;
-    }
-  }
-  &--full-h {
-    main {
       height: 100vh;
+      margin-top: 0 !important;
     }
   }
   @include mq.mq($from: mobile, $until: tablet) {
