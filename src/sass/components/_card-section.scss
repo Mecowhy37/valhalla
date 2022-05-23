@@ -1,0 +1,13 @@
+.section {
+  &__header {
+    margin-left: 15px;
+  }
+  &__box {
+    height: 50px;
+    background-color: red;
+    &--single-col {
+      width: 50%;
+    }
+  }
+}
+// BEM .Block__Element--Modifier
