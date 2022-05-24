@@ -1,0 +1,46 @@
+// ADVERTISMENT
+.ad {
+    background: grey;
+    margin-top: 2rem;
+    width: 100%;
+    height: 8rem;
+    border-radius: 1rem;
+      &__dots{
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+        margin-top: 0.5rem;
+      }
+      &__elements {
+        background: rgb(183, 183, 183);
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+      }
+        &__elements--active {
+          background: rgb(219, 194, 6);
+        }
+  }
+
+  //   TABLET
+@media (min-width: 740px) 
+  and (max-width: 980px){
+    .ad {
+      height: 9rem;
+    }
+
+}
+//   DESKTOP
+@media (min-width: 980px) 
+  and (max-width: 1824px){
+    .ad {
+      height: 10rem;
+    }
+
+}
+//   WIDE SCREEN
+@media only screen and (min-width: 1824px) {
+    .ad {
+      height: 10rem;
+    }
+}
