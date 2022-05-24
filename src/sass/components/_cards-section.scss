@@ -35,7 +35,7 @@
       display: none;
     }
 }
-////////////////////////////
+
 @include mq.mq($from: mobile, $until: tablet) {
   .section-card {
     display: flex;
