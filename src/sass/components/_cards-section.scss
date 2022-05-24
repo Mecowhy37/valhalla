@@ -1,4 +1,4 @@
-
+@use "../mq";
 
 // CARD
 .card {
@@ -35,66 +35,85 @@
       display: none;
     }
 }
-
-//   TABLET
-@media (min-width: 740px) 
-    and (max-width: 980px){
-    .section-card {
-      display: flex;
-      gap: 1rem;
-    }
-    .card {
-      border: none;
-      background: white;
-      height: 15rem;
-      &__img {
-        background: grey;
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem 1rem 1rem 1rem;
-      }
-      &__content {
-        display: none;
-      }
-    }
-    .description {
-      background: red;
-      width: 70%;
-      border-radius: 1rem;
-      padding: 0.5rem;
-    }
-    
-}
-//   DESKTOP
-@media (min-width: 980px) 
-    and (max-width: 1824px){
-    .section-card {
-      display: flex;
-      gap: 1rem;
-    }
-    .card {
-      border: none;
-      height: 20rem;
-      &__img {
-        background: grey;
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem 1rem 1rem 1rem;
-      }
-      &__content {
-        display: none;
-      }
-    }
-    .description {
-      background: red;
+////////////////////////////
+@include mq.mq($from: mobile, $until: tablet) {
+  .section-card {
+    display: flex;
+    gap: 1rem;
+  }
+  .card {
+    border: none;
+    background: white;
+    height: 15rem;
+    &__img {
+      background: grey;
       width: 100%;
-      border-radius: 1rem;
-      padding: 0.5rem;
+      height: 100%;
+      border-radius: 1rem 1rem 1rem 1rem;
     }
+    &__content {
+      display: none;
+    }
+  }
+  .description {
+    background: red;
+    width: 70%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
 
 }
-//   WIDE SCREEN
-@media only screen and (min-width: 1824px) {
+@include mq.mq($from: tablet, $until: desktop) {
+  .section-card {
+    display: flex;
+    gap: 1rem;
+  }
+  .card {
+    border: none;
+    height: 20rem;
+    &__img {
+      background: grey;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem 1rem 1rem 1rem;
+    }
+    &__content {
+      display: none;
+    }
+  }
+  .description {
+    background: red;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+}
+@include mq.mq(desktop, $until: wide) {
+  .section-card {
+    display: flex;
+    gap: 1rem;
+  }
+  .card {
+    border: none;
+    height: 20rem;
+    &__img {
+      background: grey;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem 1rem 1rem 1rem;
+    }
+    &__content {
+      display: none;
+    }
+  }
+  .description {
+    background: red;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+}
+@include mq.mq($from: wide) {
   .section-card {
     display: flex;
     gap: 1rem;
