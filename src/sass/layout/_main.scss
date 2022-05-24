@@ -6,6 +6,83 @@ main {
   @include mq.mq($from: mobile, $until: tablet) {
     margin-top: $mobile-nav-height;
     border: 1px dashed red;
+    
+    // SEARCH BAR
+    .search {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      margin-top: 0.5rem;
+      width: 80%;
+      height: 2.5rem;
+      border-radius: 3rem;
+      border: #777 1px solid;
+      &__icon {
+        font-size: 20px;
+        color: #777;
+        padding-left: 0.7rem;
+      }
+      &__input {
+        border: none;
+        outline: none;
+        height: 2rem;
+        margin-left: 0.4rem;
+        width: 80%;
+        font-size: 18px;
+        
+      }
+    }
+
+    // CARD
+    .card {
+      background: burlywood;
+      display: flex;
+      margin: auto;
+      width: 100%;
+      height: 12rem;
+      margin-top: 3rem;
+      border-radius: 1rem;
+      border: black 1px solid;
+        &__img {
+          background: grey;
+          width: 70%;
+          height: 100%;
+          border-radius: 1rem 0 0 1rem;
+        }
+        &__content {
+          padding: 0.5rem;
+          padding-left: 1rem;
+          height: 100%;
+          width: 100%;
+        }
+        &__stars {
+          margin-top: 4rem;
+        }
+        &__footer {
+          margin-top: 0.5rem;
+        }
+        &__footer .fa-bookmark{
+          float: right;
+          margin-right: 0.5rem;
+        }
+    }
+
+    .ad {
+      background: grey;
+      margin-top: 2rem;
+      width: 100%;
+      height: 8rem;
+        &__dots{
+          display: flex;
+        }
+        &__dots--elements {
+          background: grey;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+        }
+    }
+
   }
   @include mq.mq($from: tablet, $until: desktop) {
     margin-top: $tablet-nav-height;
