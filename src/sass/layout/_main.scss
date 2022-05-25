@@ -3,6 +3,10 @@
 main {
   height: 200vh;
   grid-column: 2/3;
+  @include mq.mq($until: mobile) {
+    margin-top: $mobile-nav-height;
+    border: 3px solid red;
+  }
   @include mq.mq($from: mobile, $until: tablet) {
     margin-top: $mobile-nav-height;
     border: 1px dashed red;

@@ -8,7 +8,7 @@
       margin-top: 0 !important;
     }
   }
-  @include mq.mq($from: mobile, $until: tablet) {
+  @include mq.mq($until: tablet) {
     grid-template-columns: 1fr 95% 1fr;
   }
   @include mq.mq($from: tablet, $until: desktop) {

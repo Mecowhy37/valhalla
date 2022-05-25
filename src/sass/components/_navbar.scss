@@ -11,7 +11,15 @@
     margin: 0 auto;
     align-items: center;
     grid-template-columns: 1fr min-content 1fr;
-    background-color: sandybrown;
+    padding: 0 2%;
+  }
+  &__item {
+    &::before {
+      font-size: 1.7rem;
+    }
+  }
+  &__logo {
+    font-size: 2.5em;
   }
   &--right {
     display: flex;
@@ -19,9 +27,9 @@
     justify-content: end;
     align-items: center;
     grid-column: 3/4;
-  }
-  &__logo {
-    grid-column: 2/3;
+    div:first-child {
+      margin-right: 5%;
+    }
   }
   &--left {
     margin-right: auto;
