@@ -1,8 +1,30 @@
 @use "../abstracts" as *;
 
-nav {
-  position: fixed;
-  width: 100%;
+.nav {
   top: 0;
-  background-color: sandybrown;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  &__inner {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    grid-template-columns: 1fr min-content 1fr;
+    background-color: sandybrown;
+  }
+  &--right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    grid-column: 3/4;
+  }
+  &__logo {
+    grid-column: 2/3;
+  }
+  &--left {
+    margin-right: auto;
+    grid-column: 1/2;
+  }
 }
