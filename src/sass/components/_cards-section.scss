@@ -39,11 +39,18 @@
     }
   }
   @include mq.mq($from: tablet) {
+    border: none;
+    background: none;
+    gap: 2rem;
     height: 20rem;
     &__img,
     &__content {
       flex-grow: 1;
       width: 100%;
+      border-radius: 1rem;
+    }
+    &__content {
+      background: red;
     }
   }
 }
