@@ -12,7 +12,6 @@
   &__img {
     background: grey;
     height: 100%;
-    width: 30%;
     border-radius: 1rem 0 0 1rem;
   }
   &__content {
@@ -35,6 +34,9 @@
     display: none;
   }
   @include mq.mq($until: tablet) {
+    &__img {
+      aspect-ratio: 1/1;
+    }
   }
   @include mq.mq($from: tablet) {
     height: 20rem;
