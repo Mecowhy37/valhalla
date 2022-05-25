@@ -11,8 +11,20 @@
   <body class="layout">
     <nav class="nav">
       <div class="nav__inner">
-        <div class="nav__item nav--left fa fa-bars"></div>
+        <label for="open" class="nav__item fa fa-bars burger"></label>
+        <input type="checkbox" id="open" class="nav--left" />
+        <div class="nav__side">
+          <ul class="nav__side__wrapper">
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+          </ul>
+        </div>
+
         <div class="nav__item nav__logo">logo</div>
+
         <div class="nav--right">
           <div class="nav__item fa-regular fa-heart"></div>
           <div class="nav__item fa-regular fa-user"></div>
