@@ -9,7 +9,7 @@
     <title>Sign up</title>
   </head>
   <body class="layout layout--no-nav">
-    <main>
+    <main class="spacey">
       <!-- (Anzhela) 'git checkout logobox' create logo and text, scss file: _logo-box.scss, images in assets folder-->
       <section>
         <div class="container container--log-middle">
@@ -19,21 +19,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="section section--log-fixed">
-          <div class="section__icon">
-            <i class="fa fa-chevron-left"></i>
-            <a>back</a>
-          </div>
-          <div>
-            <button class="section__button">
-              <span class="text">Login</span>
-            </button>
-          </div>
-        </div>
-      </section>
       <!-- (Prajent) 'git checkout startform' create a form and buttons, scss file: _start-forms.scss -->
-      <div class="wrapper">
+      <section class="wrapper">
         <form action="" class="form">
           <input class="form__input" type="text" id="fname" name="fname" placeholder="Full name" />
           <input class="form__input" type="text" id="username" name="username" placeholder="Username" />
@@ -50,7 +37,18 @@
             </div>
           </div>
         </form>
-      </div>
+      </section>
+      <section class="section">
+        <div class="section__icon">
+          <i class="fa fa-chevron-left"></i>
+          <a>back</a>
+        </div>
+        <div>
+          <button class="section__button">
+            <span class="text">Login</span>
+          </button>
+        </div>
+      </sec>
     </main>
   </body>
 </html>
