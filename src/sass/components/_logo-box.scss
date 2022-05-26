@@ -2,22 +2,27 @@
 @use "../abstracts" as *;
 
 .container {
- 
- margin-left: auto;
- margin-right: auto;
- width: 50%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
  &__img {
     border: 1px solid black;
-    padding: 5px;
-    width: 100px;
+    border-radius: 10%;
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 &__text{
-
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5rem;
 }
-
 
 &--logo-middle{
     justify-content: space-around;
@@ -26,5 +31,23 @@
         display: none;
     }
 }
+}
+
+@media all and (max-device-width: 720px){
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    .text {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    .text {
+        font-size: 14px;
+    }
 }
 
