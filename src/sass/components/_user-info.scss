@@ -1,3 +1,51 @@
 .user-info {
   text-align: center;
+
+  h1{
+    margin-top: 1rem; 
+  }
+  h3{
+    margin-top: 1rem;
+  }
+&__avatar{
+  vertical-align: middle;
+  width: 50%;
+  height:auto;
+  border-radius: 50%;
+  margin-top: 1rem;
+
+}
+&__stars{
+  margin-top: 0.8rem;
+}
+&__text{
+  margin: 0.5rem 2.5rem;
+}
+&__buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  
+}
+.button1{
+  font-size:1rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 2px solid #3f6c63;
+  border-radius:25rem;
+
+}
+
+.button2{
+  background-color: #bb5807;
+  color:  white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 25rem;
+}
 }
