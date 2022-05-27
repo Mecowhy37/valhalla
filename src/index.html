@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/15f6459f79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <script src="https://kit.fontawesome.com/15f6459f79.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -13,14 +14,21 @@
     <nav class="nav">
       <div class="nav__inner">
         <label for="open" class="nav__item fa fa-bars burger"></label>
-        <input type="checkbox" id="open" class="nav--left" />
-        <div class="nav__side">
+        <input type="checkbox" id="open" class="nav--left openner" />
+        <div class="nav__side to-open">
           <ul class="nav__side__wrapper">
-            <li class="nav__side__link">item</li>
-            <li class="nav__side__link">item</li>
-            <li class="nav__side__link">item</li>
-            <li class="nav__side__link">item</li>
-            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">
+              <a href="/index.html">home</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/hello.html">hello</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/login.html">login</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/signup.html">signup</a>
+            </li>
           </ul>
         </div>
 
@@ -33,6 +41,17 @@
       </div>
     </nav>
     <main>
+      <section class="section-search">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass search__icon"></i>
+          <input class="search__input" type="text" name="" placeholder="Search your recipe" />
+          <label for="openfilters">
+            <i class="fa-solid fa-sliders"></i>
+          </label>
+        </div>
+        <input type="checkbox" name="" id="openfilters" class="openner" />
+        <div class="to-open"></div>
+      </section>
       <section class="swipe">
         <div class="swipe__scroll-box">
           <div class="swipe__item">
@@ -69,6 +88,8 @@
           </div>
         </div>
       </section>
+      -->
+      <section class="resp-wrap"></section>
     </main>
   </body>
 </html>
