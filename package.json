@@ -1,5 +1,5 @@
 {
-  "name": "valhalla-kitchen",
+  "name": "l",
   "version": "0.1.0",
   "description": "school project",
   "main": "public/index.html",
@@ -25,5 +25,14 @@
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
     "sass": "^1.49.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meekee135/valhalla.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meekee135/valhalla/issues"
+  },
+  "homepage": "https://github.com/Meekee135/valhalla#readme"
 }

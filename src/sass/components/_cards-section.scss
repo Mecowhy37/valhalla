@@ -1,13 +1,91 @@
-.section {
-  &__header {
-    margin-left: 15px;
+@use "../mq";
+
+// CARD
+.card {
+  background: burlywood;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+  border: black 1px solid;
+  &__img {
+    background: grey;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
   }
-  &__box {
-    height: 50px;
-    background-color: red;
-    &--single-col {
-      width: 50%;
+  &__content--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+   
+  }
+  &__content {
+    padding-left: 0.5rem;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__footer {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  &__footer .fa-bookmark {
+    float: right;
+  }
+  &__description {
+    display: none;
+  }
+  
+  @include mq.mq($until: tablet) {
+    &__img {
+      aspect-ratio: 1/1;
+    }
+  }
+  @include mq.mq($from: tablet) {
+    border: none;
+    background: none;
+    gap: 2rem;
+    height: 20rem;
+    &__img,
+    &__content {
+      flex-grow: 1;
+      width: 100%;
+      border-radius: 1rem;
+    }
+    &__content {
+      background: red;
+    }
+    &__footer {
+      
     }
   }
 }
-// BEM .Block__Element--Modifier
+
+.card-follower {
+  background: grey;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80rem;
+  justify-content: space-between;
+  gap: 2rem;
+    &__img {
+      background: wheat;
+      width: 300px;
+      flex-grow: 1;
+      border-radius: 1rem;
+    }
+    @include mq.mq($until: tablet) {
+      // Applies for mobile only
+    }
+    @include mq.mq($from: tablet) {
+      height: 40rem;
+    }
+    @include mq.mq($from: desktop) {
+    
+    }
+}
