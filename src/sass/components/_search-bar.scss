@@ -1,50 +1,53 @@
 // File for Elisha
 
 // SEARCH BAR
+
 .search {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-top: 0.5rem;
-    width: 80%;
-    height: 2.5rem;
-    border-radius: 3rem;
-    border: #777 1px solid;
-    &__icon {
-      font-size: 20px;
-      color: #777;
-      padding-left: 0.7rem;
-    }
-    &__input {
-      border: none;
-      outline: none;
-      height: 2rem;
-      margin-left: 0.4rem;
-      width: 80%;
-      font-size: 18px;
-    }
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 3rem;
+  border: #777 1px solid;
+  padding: 0 0.7rem;
+  &__icon {
+    font-size: 20px;
+    color: #777;
   }
+  &__input {
+    border: none;
+    outline: none;
+    height: 2rem;
+    margin-left: 0.4rem;
+    width: 80%;
+    font-size: 18px;
+  }
+}
+
+.filters {
+  display: block;
+  height: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
 
 //   TABLET
-@media (min-width: 740px) 
-    and (max-width: 980px){
-    .search {
-        background: greenyellow;
-        width: 70%;
-    }
+@media (min-width: 740px) and (max-width: 980px) {
+  .search {
+    width: 70%;
+  }
 }
 //   DESKTOP
-@media (min-width: 980px) 
-    and (max-width: 1824px){
-    .search {
-        background: blue;
-        width: 70%;
-    }
+@media (min-width: 980px) and (max-width: 1824px) {
+  .search {
+    width: 70%;
+  }
 }
 //   WIDE SCREEN
 @media only screen and (min-width: 1824px) {
-    .search {
-        background: blue;
-        width: 60%;
-    }
+  .search {
+    width: 60%;
+  }
 }
