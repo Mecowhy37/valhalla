@@ -1,7 +1,8 @@
 @use "../mq";
 @use "../abstracts" as *;
 main {
-  height: 200vh;
+  // height: 200vh;
+  height: 100%;
   grid-column: 2/3;
   @include mq.mq($from: mobile, $until: tablet) {
     margin-top: $mobile-nav-height;
