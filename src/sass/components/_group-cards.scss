@@ -1,5 +1,32 @@
+@use "../abstracts" as *;
+
 .cards {
-  // after you build items than give this a flex wrap
+  display: flex;
+  justify-content: center;
+
   &__item {
+    background-color: #fff;
+    width: 220px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  &__item p{
+    padding: 10px;
+  }
+
+  &__itam a{
+    
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+  }
+
+  .card-img{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
   }
 }
