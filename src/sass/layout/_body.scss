@@ -6,6 +6,11 @@
     main {
       height: 100vh;
       margin-top: 0 !important;
+      &.spacey {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
     }
   }
   @include mq.mq($until: tablet) {
