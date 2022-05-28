@@ -6,12 +6,13 @@
   display: flex;
   margin: auto;
   width: 100%;
-  height: 12rem;
+
   border-radius: 1rem;
   border: black 1px solid;
   &__img {
     background: grey;
-    height: 100%;
+    width: 50%;
+    aspect-ratio: 1/1;
     border-radius: 1rem 0 0 1rem;
   }
   &__content--wrapper {
@@ -24,7 +25,7 @@
   &__content {
     padding-left: 0.5rem;
     height: 100%;
-    width: 70%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,28 +41,26 @@
     display: none;
   }
 
-  @include mq.mq($until: tablet) {
-    &__img {
-      aspect-ratio: 1/1;
-    }
-  }
-  @include mq.mq($from: tablet) {
-    border: none;
-    background: none;
-    gap: 2rem;
-    height: 20rem;
-    &__img,
-    &__content {
-      flex-grow: 1;
-      width: 100%;
-      border-radius: 1rem;
-    }
-    &__description {
-      display: block;
-      flex: 2;
-    }
-    &__content {
-      background: rgba(147, 172, 138, 0.557)
+
+  &--spliting {
+    @include mq.mq($from: tablet) {
+      border: none;
+      background: none;
+      gap: 2rem;
+      height: 20rem;
+      &__img,
+      &__content {
+        flex-grow: 1;
+        width: 100%;
+        border-radius: 1rem;
+      }
+      &__description {
+        display: block;
+        flex: 2;
+      }
+      &__content {
+        background: rgba(147, 172, 138, 0.557)
+      }
     }
   }
 }
@@ -71,7 +70,7 @@
     margin-bottom: 1rem;
   }
   @include mq.mq($from: tablet) {
-    display: none;
+    // display: none;
   }
   @include mq.mq($from: desktop) {
   
