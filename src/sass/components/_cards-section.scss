@@ -86,20 +86,18 @@
   height: 80rem;
   justify-content: space-between;
   gap: 2rem;
-    &__img {
-      background: wheat;
-      width: 300px;
-      flex-grow: 1;
-      border-radius: 1rem;
-    }
-    @include mq.mq($until: tablet) {
-      // Applies for mobile only
-      display: none;
-    }
-    @include mq.mq($from: tablet) {
-      height: 40rem;
-    }
-    @include mq.mq($from: desktop) {
-    
-    }
+  &__img {
+    background: wheat;
+    width: 300px;
+    flex-grow: 1;
+    border-radius: 1rem;
+  }
+  @include mq.mq($until: tablet) {
+    // Applies for mobile only
+  }
+  @include mq.mq($from: tablet) {
+    height: 40rem;
+  }
+  @include mq.mq($from: desktop) {
+  }
 }

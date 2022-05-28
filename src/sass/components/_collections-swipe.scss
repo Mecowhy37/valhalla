@@ -1,5 +1,4 @@
 .swipe {
-  margin-top: 30px;
   max-width: 100%;
   &__scroll-box {
     height: 100%;
@@ -8,12 +7,12 @@
     overflow-x: scroll;
   }
   &__item {
-    width: clamp(100px, 11vw, 150px);
+    width: clamp(100px, 11vw, 130px);
     margin-right: 5%;
     flex-shrink: 0;
   }
   &__img {
-    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0.653);
     border-radius: 50%;
     aspect-ratio: 1/1;
     margin-bottom: 7%;

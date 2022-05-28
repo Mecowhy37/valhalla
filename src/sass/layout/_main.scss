@@ -4,6 +4,9 @@ main {
   // height: 200vh;
   height: 100%;
   grid-column: 2/3;
+  > section {
+    margin-top: 70px;
+  }
   @include mq.mq($until: mobile) {
     margin-top: $mobile-nav-height;
     border: 3px solid red;
