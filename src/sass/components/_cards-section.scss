@@ -1,6 +1,6 @@
 @use "../mq";
 
-// CARD
+
 .card {
   background: burlywood;
   display: flex;
@@ -20,7 +20,6 @@
     flex: 1;
     gap: 1.5rem;
     padding: 1rem;
-   
   }
   &__content {
     padding-left: 0.5rem;
@@ -59,16 +58,11 @@
     }
     &__description {
       display: block;
-
       flex: 2;
     }
     &__content {
-      background: red;
+      background: rgba(147, 172, 138, 0.557)
     }
-    &__footer {
-      
-    }
-    
   }
 }
 
