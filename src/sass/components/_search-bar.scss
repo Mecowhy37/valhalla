@@ -8,10 +8,10 @@
   margin: 0 auto;
   justify-content: space-between;
   width: 80%;
-  height: 2.5rem;
+  height: min-content;
   border-radius: 3rem;
   border: #777 1px solid;
-  padding: 0 0.7rem;
+  padding: clamp(5px, 1vw, 10px) 0.7rem;
   &__icon {
     font-size: 20px;
     color: #777;
