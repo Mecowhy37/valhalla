@@ -1,4 +1,5 @@
 // TITLE
+@use "../abstracts" as *;
 .title {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -9,11 +10,19 @@
   & + .to-open {
     transition: all 0.3s ease;
     height: 0;
-    background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
   }
   &:checked + .to-open {
     height: 50vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.324);
   }
+}
+
+.shadow {
+  box-shadow: 0px $y $blur $spread $shadow;
+  -webkit-box-shadow: 0px $y $blur $spread $shadow;
+  -moz-box-shadow: 0px $y $blur $spread $shadow;
+}
+.accent-orange {
+  color: $accent-orange;
 }

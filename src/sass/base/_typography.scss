@@ -1,1 +1,5 @@
-//font faces and sizes
+@use "../abstracts" as *;
+
+* {
+  color: $text-color;
+}

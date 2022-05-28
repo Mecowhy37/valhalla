@@ -2,6 +2,7 @@
 @use "../abstracts/" as *;
 .layout {
   display: grid;
+  background-color: $background-color;
   &--no-nav {
     main {
       height: 100vh;

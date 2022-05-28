@@ -1,6 +1,4 @@
-// File for Elisha
-
-// SEARCH BAR
+@use "../abstracts" as *;
 
 .search {
   display: flex;
@@ -9,12 +7,11 @@
   justify-content: space-between;
   width: 80%;
   height: min-content;
+  background-color: $white;
   border-radius: 3rem;
-  border: #777 1px solid;
-  padding: clamp(5px, 1vw, 10px) 0.7rem;
+  padding: clamp(5px, 1vw, 10px) calc(clamp(5px, 1vw, 10px) * 2);
   &__icon {
     font-size: 20px;
-    color: #777;
   }
   &__input {
     border: none;
@@ -30,7 +27,6 @@
   display: block;
   height: 0;
   width: 100%;
-  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 //   TABLET

@@ -1,3 +1,4 @@
+@use "../abstracts" as *;
 .swipe {
   max-width: 100%;
   &__scroll-box {
@@ -5,6 +6,11 @@
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
   }
   &__item {
     width: clamp(100px, 11vw, 130px);
@@ -12,7 +18,7 @@
     flex-shrink: 0;
   }
   &__img {
-    border: 1px solid rgba(0, 0, 0, 0.653);
+    background-color: $white;
     border-radius: 50%;
     aspect-ratio: 1/1;
     margin-bottom: 7%;
