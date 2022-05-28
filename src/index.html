@@ -9,10 +9,33 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- <script src="https://kit.fontawesome.com/15f6459f79.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Home Page</title>
   </head>
   <body class="layout">
-    <nav>nav</nav>
+    <nav class="nav">
+      <div class="nav__inner">
+        <label for="open" class="nav__item fa fa-bars burger"></label>
+        <input type="checkbox" id="open" class="nav--left" />
+        <div class="nav__side">
+          <ul class="nav__side__wrapper">
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+            <li class="nav__side__link">item</li>
+          </ul>
+        </div>
+
+        <div class="nav__item nav__logo">logo</div>
+
+        <div class="nav--right">
+          <div class="nav__item fa fa-heart-o"></div>
+          <div class="nav__item fa fa-user"></div>
+        </div>
+      </div>
+    </nav>
     <main>
       <!-- (Elisha) 'git checkout searchandsections' create searchbar and sections-->
       <section class="section-search">
@@ -25,6 +48,43 @@
             placeholder="Search your recipe"
           />
           <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+      </section>
+
+      <section class="swipe">
+        <div class="swipe__scroll-box">
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
+          <div class="swipe__item">
+            <div class="swipe__img"></div>
+            <div class="swipe__categ">CATEGORY</div>
+          </div>
         </div>
       </section>
 
@@ -191,6 +251,7 @@
           <div class="card-follower__img"></div>
         </div>
       </section>
+
     </main>
     <footer>
       <div class="footer">

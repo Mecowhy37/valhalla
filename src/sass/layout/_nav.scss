@@ -1,16 +1,28 @@
 @use "../mq";
 @use "../abstracts" as *;
-nav {
+.nav {
   @include mq.mq($from: mobile, $until: tablet) {
     height: $mobile-nav-height;
+    &__inner {
+      width: 95%;
+    }
   }
   @include mq.mq($from: tablet, $until: desktop) {
     height: $tablet-nav-height;
+    &__inner {
+      width: 85%;
+    }
   }
   @include mq.mq(desktop, $until: wide) {
     height: $desktop-nav-height;
+    &__inner {
+      width: 75%;
+    }
   }
   @include mq.mq($from: wide) {
     height: $wide-nav-height;
+    &__inner {
+      width: 65%;
+    }
   }
 }
