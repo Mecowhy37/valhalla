@@ -6,12 +6,7 @@
   display: flex;
   flex-direction: row;
   position: fixed;
-<<<<<<< HEAD
   background-color: $background-opaque;
-=======
-  background-color: rgba(255, 255, 255, 0.95);
-  z-index: 1000;
->>>>>>> searchandsections
   &__inner {
     display: grid;
     margin: 0 auto;
@@ -24,7 +19,8 @@
       font-size: 1.7rem;
     }
   }
-  &__logo, img {
+  &__logo,
+  img {
     width: 12rem;
   }
   &--right {

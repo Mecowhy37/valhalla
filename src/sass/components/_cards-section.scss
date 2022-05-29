@@ -9,9 +9,9 @@
   height: 12rem;
   border-radius: 1rem;
 
-  &__img, img {
+  &__img,
+  img {
     border-radius: 1rem 0 0 1rem;
-    
   }
   img {
     width: 100%;
@@ -45,7 +45,7 @@
     font-family: $font-family-roboto;
     font-size: 11px;
   }
-  &__tags{
+  &__tags {
     font-family: $font-family-roboto;
     font-size: 11px;
   }
@@ -64,7 +64,7 @@
   &__description {
     display: none;
   }
-  &__dots{
+  &__dots {
     display: flex;
     justify-content: center;
     gap: 0.2rem;
@@ -76,8 +76,8 @@
     height: 0.7rem;
     border-radius: 50%;
   }
-    &__dots__elements--active {
-      background: $accent-color;
+  &__dots__elements--active {
+    background: $accent-color;
   }
   @include mq.mq($until: tablet) {
     &__img {
@@ -88,7 +88,8 @@
     border: none;
     gap: 2rem;
     height: 20rem;
-    &__img, img {
+    &__img,
+    img {
       border-radius: 1rem 1rem 1rem 1rem;
     }
     &__content--wrapper {
@@ -100,14 +101,13 @@
       flex-grow: 1;
       width: 100%;
       border-radius: 1rem;
-      
     }
     &__description {
       display: block;
       flex: 2;
     }
     &__content {
-      background: rgba(147, 172, 138, 0)
+      background: rgba(147, 172, 138, 0);
     }
   }
 }
@@ -120,7 +120,6 @@
     display: none;
   }
   @include mq.mq($from: desktop) {
-  
   }
 }
 .card-follower {
@@ -130,61 +129,59 @@
   justify-content: space-around;
   gap: 2rem;
   position: relative;
-  
+
   // padding-bottom: 61rem;
-    &__img {
-      position: relative;
-      background: wheat;
-      width: 330px;
-      flex-grow: 1;
-      border-radius: 1rem;
-      overflow: hidden;
-      height: 300px;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    &__body {
-      position: absolute;
-      background: #93a78c47;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      bottom: 0;
-    }
-    &__title {
-      background: #93a78cc1;
-      width: 100%;
-      height: 40%;
-      margin-top: 12rem;
-      border-radius: 0 0 1rem;
-      color: white;
-      font-family: $font-family-open-sans;
-      font-size: 17px;
-      font-weight: 400;
-      padding-left: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    p {
-      font-weight: 400;
-      font-size: 15px;
-      color: $text-color;
-    }
-    i {
-      color: $text-color;
-    }
-    @include mq.mq($until: tablet) {
-      // Applies for mobile only
-      display: none;
-    }
-    @include mq.mq($from: tablet) {
-     
-    }
-    @include mq.mq($from: desktop) {
-    
-    }
+  &__img {
+    position: relative;
+    background: wheat;
+    width: 330px;
+    flex-grow: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 300px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__body {
+    position: absolute;
+    background: #93a78c47;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    bottom: 0;
+  }
+  &__title {
+    background: #93a78cc1;
+    width: 100%;
+    height: 40%;
+    margin-top: 12rem;
+    border-radius: 0 0 1rem;
+    color: white;
+    font-family: $font-family-open-sans;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    color: $text-color;
+  }
+  i {
+    color: $text-color;
+  }
+  @include mq.mq($until: tablet) {
+    // Applies for mobile only
+    display: none;
+  }
+  @include mq.mq($from: tablet) {
+  }
+  @include mq.mq($from: desktop) {
+  }
 }
