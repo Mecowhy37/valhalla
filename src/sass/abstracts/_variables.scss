@@ -1,4 +1,24 @@
+// Media queries
 $mobile-nav-height: 55px;
 $tablet-nav-height: 60px;
 $desktop-nav-height: 65px;
 $wide-nav-height: 70px;
+
+
+
+//COLORS
+$action-color: #93a78c;
+$background: #f6f5f3;
+$text-color: #252527;
+$accent-color: #bb5807;
+
+
+//SHADOW VARIANTS
+$y: 5px;
+$blur: 13px;
+$spread: -3px;
+$shadow: rgba(0, 0, 0, 0.438);
+
+//FONT-FAMILY
+$font-family-roboto: 'Open Sans', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;

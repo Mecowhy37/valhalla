@@ -1,13 +1,190 @@
-.section {
-  &__header {
-    margin-left: 15px;
+@use "../mq";
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.card {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+
+  &__img, img {
+    border-radius: 1rem 0 0 1rem;
+    
   }
-  &__box {
-    height: 50px;
-    background-color: red;
-    &--single-col {
-      width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content--wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: space-between;
+    background: white;
+  }
+  &__content {
+    padding-left: 0rem;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  i {
+    color: $accent-color;
+  }
+  &__title {
+    font-family: $font-family-open-sans;
+  }
+  &__by {
+    font-family: $font-family-roboto;
+    font-size: 11px;
+  }
+  &__tags{
+    font-family: $font-family-roboto;
+    font-size: 11px;
+  }
+  &__footer {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  &__time {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    font-family: $font-family-roboto;
+  }
+  &__footer .fa-bookmark {
+    float: right;
+  }
+  &__description {
+    display: none;
+  }
+  &__dots{
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: 1rem;
+  }
+  &__dots-elements {
+    background: rgb(183, 183, 183);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+  }
+    &__dots__elements--active {
+      background: $accent-color;
+  }
+  @include mq.mq($until: tablet) {
+    &__img {
+      aspect-ratio: 1/1;
+    }
+  }
+  @include mq.mq($from: tablet) {
+    border: none;
+    gap: 2rem;
+    height: 20rem;
+    &__img, img {
+      border-radius: 1rem 1rem 1rem 1rem;
+    }
+    &__content--wrapper {
+      border-radius: 1rem 1rem 1rem 1rem;
+      background: white;
+    }
+    &__img,
+    &__content {
+      flex-grow: 1;
+      width: 100%;
+      border-radius: 1rem;
+      
+    }
+    &__description {
+      display: block;
+      flex: 2;
+    }
+    &__content {
+      background: rgba(147, 172, 138, 0)
     }
   }
 }
-// BEM .Block__Element--Modifier
+
+.section-card-following {
+  .card {
+    margin-bottom: 1rem;
+  }
+  @include mq.mq($from: tablet) {
+    display: none;
+  }
+  @include mq.mq($from: desktop) {
+  
+  }
+}
+.card-follower {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  gap: 2rem;
+  position: relative;
+  
+  // padding-bottom: 61rem;
+    &__img {
+      position: relative;
+      background: wheat;
+      width: 330px;
+      flex-grow: 1;
+      border-radius: 1rem;
+      overflow: hidden;
+      height: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__body {
+      position: absolute;
+      background: #93a78c47;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      bottom: 0;
+    }
+    &__title {
+      background: #93a78cc1;
+      width: 100%;
+      height: 40%;
+      margin-top: 12rem;
+      border-radius: 0 0 1rem;
+      color: white;
+      font-family: $font-family-open-sans;
+      font-size: 17px;
+      font-weight: 400;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      color: $text-color;
+    }
+    i {
+      color: $text-color;
+    }
+    @include mq.mq($until: tablet) {
+      // Applies for mobile only
+      display: none;
+    }
+    @include mq.mq($from: tablet) {
+     
+    }
+    @include mq.mq($from: desktop) {
+    
+    }
+}
