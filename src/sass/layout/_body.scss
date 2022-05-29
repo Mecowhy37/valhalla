@@ -3,14 +3,24 @@
 .layout {
   display: grid;
   background-color: $background-color;
+  > section {
+    margin-top: 70px;
+  }
   &--no-nav {
     main {
       height: 100vh;
       margin-top: 0 !important;
-      &.spacey {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      &.center {
+        justify-content: start;
+        section {
+          margin-top: 10vh;
+        }
+      }
+      > section {
+        margin-top: 0px;
       }
     }
   }

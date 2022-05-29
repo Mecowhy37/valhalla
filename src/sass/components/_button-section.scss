@@ -1,25 +1,42 @@
-.section {
-  display: flex;
-  justify-content: space-around;
-  // position:absolute;
-  bottom: 30px;
-  width: 100%;
-  right: 20px;
-  left: 20px;
+@use "../abstracts" as *;
 
-  &__icon {
-    text-align: center;
-    line-height: 75px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  &__button {
-    background-color: #787878;
-    width: 100px;
-    margin: 15px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    cursor: pointer;
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  // width: 500px;
+  width: clamp(250px, 50vw, 500px);
+  .icon-button {
+    $icon-button-height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: calc($icon-button-height * 0.5);
+    & :first-child {
+      margin-right: 1.3rem;
+    }
+    &--prm {
+      background-color: $action-green;
+      color: $white !important;
+      svg {
+        fill: $white !important;
+      }
+      span {
+        padding-left: 0.5rem;
+      }
+    }
+    svg {
+      height: 1.8rem;
+      aspect-ratio: 1/1;
+      fill: $text-color;
+      transform: rotate(180deg);
+      &.back {
+        transform: rotate(180deg) scale(0.65);
+        transform-origin: center;
+      }
+    }
   }
 }
