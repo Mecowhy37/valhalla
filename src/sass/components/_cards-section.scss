@@ -17,6 +17,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
   }
   &__content--wrapper {
     display: flex;
@@ -123,6 +124,8 @@
   
   }
 }
+
+
 .card-follower {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +133,7 @@
   justify-content: space-around;
   gap: 2rem;
   position: relative;
+  bottom: 2rem;
   
   // padding-bottom: 61rem;
     &__img {
@@ -157,8 +161,8 @@
     &__title {
       background: #93a78cc1;
       width: 100%;
-      height: 40%;
-      margin-top: 12rem;
+      height: 30%;
+      margin-top: 13.5rem;
       border-radius: 0 0 1rem;
       color: white;
       font-family: $font-family-open-sans;
@@ -169,13 +173,17 @@
       flex-direction: column;
       align-items: center;
     }
+    &__title h2 {
+      color: white;
+      font-weight: 500;
+    }
     p {
       font-weight: 400;
       font-size: 15px;
-      color: $text-color;
+      color: white;
     }
     i {
-      color: $text-color;
+      color: white;
     }
     @include mq.mq($until: tablet) {
       // Applies for mobile only
