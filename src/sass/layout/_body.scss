@@ -1,7 +1,10 @@
 @use "../mq";
-@use "../abstracts/" as *;
+@use "../base" as *;
+@use "../abstracts" as *;
+
 .layout {
   display: grid;
+  background: $background;
   &--no-nav {
     main {
       height: 100vh;

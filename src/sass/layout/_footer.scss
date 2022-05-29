@@ -2,7 +2,7 @@
 @use "../abstracts" as *;
 
 footer {
-  background: rgb(212, 211, 211);
+  background: rgba(203, 203, 203, 0.657);
   grid-column: 2/3;
   margin-top: 1rem;
   display: flex;
@@ -44,7 +44,9 @@ footer {
   }
   a {
     text-decoration: none;
+    font-family: $font-family-roboto;
   }
+
   a:hover {
     text-decoration: underline;
   }
@@ -52,6 +54,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: $font-family-roboto;
   }
   &__some--logo {
     display: flex;
@@ -60,6 +63,8 @@ footer {
   }
   &__copy-write {
     margin-top: 1rem;
+    font-family: $font-family-roboto;
+    font-size: 12px;
   }
 
   @include mq.mq($from: tablet) {

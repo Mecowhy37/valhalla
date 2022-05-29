@@ -7,6 +7,7 @@
   flex-direction: row;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
   &__inner {
     display: grid;
     margin: 0 auto;
@@ -19,9 +20,8 @@
       font-size: 1.7rem;
     }
   }
-
-  &__logo {
-    font-size: 2.5em;
+  &__logo, img {
+    width: 12rem;
   }
   &--right {
     display: flex;

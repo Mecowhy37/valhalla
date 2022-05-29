@@ -1,19 +1,32 @@
-// TITLE
+@use "../abstracts" as *;
+
+
+//TITLES
 .title {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  font-family: $font-family-open-sans;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 25px;
 }
+
 
 .openner {
   display: none;
   & + .to-open {
     transition: all 0.3s ease;
     height: 0;
-    background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
   }
+
   &:checked + .to-open {
     height: 50vh;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.324);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.122);
   }
+}
+
+.shadow {
+  box-shadow: 0px $y $blur $spread $shadow;
+  -webkit-box-shadow: 0px $y $blur $spread $shadow;
+  -moz-box-shadow: 0px $y $blur $spread $shadow;
 }

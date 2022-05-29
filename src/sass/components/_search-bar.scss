@@ -1,4 +1,4 @@
-// File for Elisha
+@use "../abstracts" as *;
 
 // SEARCH BAR
 
@@ -10,13 +10,14 @@
   width: 80%;
   height: min-content;
   border-radius: 3rem;
-  border: #777 1px solid;
+  // border: #777 1px solid;
   padding: clamp(5px, 1vw, 10px) 0.7rem;
   &__icon {
     font-size: 20px;
     color: #777;
   }
   &__input {
+    background: #f6f5f3;
     border: none;
     outline: none;
     height: 2rem;

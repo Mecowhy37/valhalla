@@ -10,23 +10,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
   grid-gap: var(--grid-layout-gap);
-  // @include mq.mq($from: tablet, $until: wide) {
-  //   padding: 0 max(5%, 10px);
-  // }
-  // @include mq.mq($from: wide) {
-  //   padding: 0 clamp(10px, 10%, 50px);
-  // }
-  // .card {
-  //   display: flex;
-  //   &__img {
-      
-  //     width: 40%;
-  //     aspect-ratio: 1/1;
-  //   }
-  //   &__content {
-
-  //     height: 100%;
-  //     flex-grow: 1;
-  //   }
-  // }
+  @include mq.mq($from: tablet, $until: wide) {
+    padding: 0 max(5%, 10px);
+  }
+  @include mq.mq($from: wide) {
+    padding: 0 clamp(10px, 10%, 50px);
+  }
+  .cardy {
+    display: flex;
+    &__img {
+      background-color: lightblue;
+      width: 40%;
+      aspect-ratio: 1/1;
+    }
+    &__content {
+      background-color: lightgreen;
+      height: 100%;
+      flex-grow: 1;
+    }
+  }
 }
