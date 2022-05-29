@@ -1,5 +1,7 @@
 @use "../mq";
-@use "../abstracts/" as *;
+@use "../base" as *;
+@use "../abstracts" as *;
+
 .layout {
   display: grid;
   background-color: $background-color;
