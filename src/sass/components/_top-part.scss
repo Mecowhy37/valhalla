@@ -9,6 +9,9 @@
   }
   &__left {
       display: flex;
+      :first-child {
+        margin-right: 5%;
+      }
   }
     .top-part h2{
         text-align: center;

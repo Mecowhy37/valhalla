@@ -1,8 +1,15 @@
 @use "../abstracts" as *;
 
+.cards-wrapper{
+  display: flex;
+  margin: 0 auto;
+}
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  
+
 
   &__item {
     background-color: #fff;
@@ -15,18 +22,31 @@
     padding: 10px;
   }
 
-  &__itam a{
-    
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 50px;
-  }
 
   .card-img{
     height: 170px;
     margin-bottom: 15px;
     background-size: cover;
-    border-radius: 15px 15px 0 0;
+    background-color: #ffc;
+    
+  }
+
+}
+
+@media (max-width: 480px){
+  .cards{
+    display: inline-block;
+    min-width: calc(50% - 2rem - 1px);
   }
 }
+
+@media (max-width:768px){
+  .cards{
+    display: inline-block;
+    max-width: 0;
+  }
+}
+  
+
+
+
