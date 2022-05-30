@@ -1,0 +1,71 @@
+@use "../mq";
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.recipe-ingredients{
+    text-align: center;
+    display: block;
+    margin-right: 40px;
+    width: 100%;
+    flex-direction: column;
+    h3{
+        font-family: $font-family-roboto;
+        font-size: 1.2rem;
+    }
+ &__list{
+    list-style-type:none;
+    line-height:30px;
+    //column-count: 2;
+    columns: 2 100px;
+    column-gap: 2em;
+    margin: 2rem;
+ }
+   
+    ul{
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-family: $font-family-roboto;
+        color: $text-color;
+    }
+    li{
+        border-bottom:1px solid $action-color;
+        padding: 5px;
+ }
+ &__btn {
+    background-color:$accent-color;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    i{
+        font-size: 18px;
+        color: white;
+    }
+  }
+}
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .recipe-ingredients__list{
+        columns: 1;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+
+  } 
