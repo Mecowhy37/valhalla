@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+
+    <title>Recipe</title>
   </head>
   <body class="layout">
     <nav class="nav">
@@ -31,6 +32,67 @@
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <div>
+        <ul class="breadcrumb">
+          <li><a href="#">Home page</a></li>
+          <li><a href="#">Recipes page</a></li>
+          <li>Recipe page</li>
+        </ul>
+      </div>
+      <section class="recipe">
+        <div class="recipe__header">
+          <h3>Recipe name</h3>
+          <div class="recipe__stars">
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star"></i>
+            <i class="fa fa-solid fa-star-o"></i>
+          </div>
+        </div>
+        <div class="recipe__image">
+          <img src="./assets/recipe img.jpg" alt="recipeimg">
+        </div>
+        <div class="grid-container">
+            <div class="grid_item recipe__attributes">
+                <i class="fa fa-light fa-circle-o"></i>
+                <i class="fa fa-light fa-circle-o"></i>
+                <i class="fa fa-light fa-circle-o"></i>
+                <i class="fa fa-light fa-circle-o"></i>
+            </div>
+            <div class="grid_item">
+                <a>Time:</a>
+                <i class="fa fa-solid fa-clock"></i>
+            </div>
+            <div class="grid_item">
+                <i class="fa-solid fa-utensils"></i>
+                <a>Servings</a>
+            </div>
+            <div class="grid_item">
+                <i class="fa fa-solid fa-circle-arrow-down">Download</i>
+                <i class="fa fa-solid fa-bookmark-o">Save</i>
+            </div>
+        </div>
+        <div class="recipe__description">
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Nisl vel pretium lectus quam. Consequat mauris nunc congue nisi vitae suscipit tellus. Integer eget aliquet nibh praesent tristique magna sit amet. 
+              Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Euismod in pellentesque massa placerat. Eu volutpat odio facilisis mauris sit amet. 
+              Pharetra magna ac placerat vestibulum lectus mauris ultrices. Diam phasellus vestibulum lorem sed risus ultricies. Eu volutpat odio facilisis mauris sit amet.
+              Id ornare arcu odio ut sem nulla. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Velit ut tortor pretium viverra.</p>
+        </div>
+        <div class="recipe__popular-review">
+          <h3>Popular review</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star-o"></i>
+        </div>
+        
+      </section>
+    </main>
   </body>
 </html>
