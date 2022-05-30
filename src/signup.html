@@ -10,47 +10,60 @@
   </head>
   <body class="layout layout--no-nav">
     <main>
-      <!-- (Anzhela) 'git checkout logobox' create logo and text, scss file: _logo-box.scss, images in assets folder-->
-      <section>
-        <div class="container container--log-middle">
-          <img class="container__img" src="./assets/logo.png" alt="" />
-          <div class="container__text">
-            <p>We will get you on a board right after you fill out this form</p>
-          </div>
+      <section class="container">
+        <div>
+          <img class="container__img" src="./assets/logo-text-around.png" alt="" />
+        </div>
+        <div class="container__text">
+          <h1 class="text">We will get you on a board right after you fill out this form</h1>
         </div>
       </section>
-      <!-- (Prajent) 'git checkout startform' create a form and buttons, scss file: _start-forms.scss -->
-      <section class="wrapper">
+      <section class="form-wrapper">
         <form action="" class="form">
+          <label for="fname">Fullname</label>
           <input class="form__input" type="text" id="fname" name="fname" placeholder="Full name" />
+
+          <label for="username">user name</label>
           <input class="form__input" type="text" id="username" name="username" placeholder="Username" />
+
+          <label for="email">email</label>
           <input class="form__input" type="text" id="email" name="email" placeholder="Email" />
+
+          <label for="password">password</label>
           <input class="form__input" type="password" id="password" name="password" placeholder="Password" />
-          <div class="container">
-            <div class="checkbox">
-              <input type="checkbox" id="signup" name="signup" value="signup" />
-              <label for="signup"> sign me up for tailored recipes</label>
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" id="remember" name="remember" value="remember" />
-              <label for="signup"> remember me</label>
-            </div>
+
+          <div class="form__checkbox">
+            <input type="checkbox" id="signup" name="signup" value="signup" />
+            <label for="signup">sign me up for tailored recipes</label>
+          </div>
+          <div class="form__checkbox">
+            <input type="checkbox" id="remember" name="remember" value="remember" />
+            <label for="signup">remember me</label>
           </div>
         </form>
       </section>
-      <section class="section">
-        <div class="section__icon">
-          <i class="fa fa-chevron-left"></i>
-          <a href="/hello.html">back</a>
-        </div>
-        <div>
-          <button class="section__button">
-            <span class="text">
-             <a href="/index.html">Sign up</a>
-            </span>
-          </button>
-        </div>
-      </sec>
+      <section class="buttons-wrap">
+        <a href="/hello.html" class="button button--icon left">
+          <span class="button__text">back</span>
+          <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="back">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.858234 3.70414C0.689958 3.70414 0.528575 3.77099 0.409586 3.88997C0.290597 4.00896 0.22375 4.17035 0.22375 4.33862C0.22375 4.5069 0.290597 4.66828 0.409586 4.78727C0.528575 4.90626 0.689959 4.97311 0.858234 4.97311L8.20051 4.97221L5.71992 7.45279C5.60109 7.57163 5.53432 7.73281 5.53432 7.90087C5.53432 8.06894 5.60109 8.23012 5.71992 8.34896C5.83876 8.46779 5.99994 8.53456 6.16801 8.53456C6.33607 8.53456 6.49725 8.46779 6.61609 8.34896L10.1783 4.7867C10.2972 4.66787 10.3639 4.50668 10.3639 4.33862C10.3639 4.17056 10.2972 4.00938 10.1783 3.89054L6.61609 0.328288C6.49725 0.209449 6.33607 0.142686 6.16801 0.142686C5.99994 0.142687 5.83876 0.20945 5.71992 0.328289C5.60108 0.447127 5.53432 0.608307 5.53432 0.77637C5.53432 0.944434 5.60108 1.10561 5.71992 1.22445L8.20051 3.70503L0.858234 3.70414Z"
+            />
+          </svg>
+        </a>
+        <a href="/index.html" class="button button--prm button--icon right">
+          <span class="button__text">Sign up</span>
+          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.6123 4.06548C14.9485 2.40173 12.692 1.46705 10.3391 1.46705C7.98623 1.46705 5.7297 2.40173 4.06596 4.06547C2.40222 5.72922 1.46754 7.98574 1.46754 10.3386C1.46754 12.6915 2.40222 14.948 4.06596 16.6118C5.7297 18.2755 7.98623 19.2102 10.3391 19.2102C12.692 19.2102 14.9485 18.2755 16.6123 16.6118C18.276 14.948 19.2107 12.6915 19.2107 10.3386C19.2107 7.98574 18.276 5.72922 16.6123 4.06548ZM3.1698 17.5079C1.26838 15.6065 0.200173 13.0276 0.200172 10.3386C0.200173 7.64961 1.26838 5.07073 3.1698 3.16931C5.07122 1.26789 7.6501 0.199686 10.3391 0.199685C13.0281 0.199685 15.607 1.26789 17.5084 3.16931C19.4098 5.07073 20.478 7.64961 20.478 10.3386C20.478 13.0276 19.4098 15.6065 17.5084 17.5079C15.607 19.4094 13.0281 20.4776 10.3391 20.4776C7.6501 20.4776 5.07122 19.4094 3.1698 17.5079ZM14.8199 10.9731C14.9882 10.9731 15.1496 10.9063 15.2686 10.7873C15.3876 10.6683 15.4544 10.5069 15.4544 10.3386C15.4544 10.1703 15.3876 10.009 15.2686 9.88997C15.1496 9.77099 14.9882 9.70414 14.8199 9.70414L7.47766 9.70504L9.95824 7.22445C10.0771 7.10561 10.1438 6.94443 10.1438 6.77637C10.1438 6.60831 10.0771 6.44713 9.95824 6.32829C9.8394 6.20945 9.67822 6.14269 9.51016 6.14269C9.3421 6.14269 9.18092 6.20945 9.06208 6.32829L5.49983 9.89054C5.38099 10.0094 5.31422 10.1706 5.31422 10.3386C5.31422 10.5067 5.38099 10.6679 5.49983 10.7867L9.06208 14.349C9.18092 14.4678 9.3421 14.5346 9.51016 14.5346C9.67822 14.5346 9.8394 14.4678 9.95824 14.349C10.0771 14.2301 10.1438 14.0689 10.1438 13.9009C10.1438 13.7328 10.0771 13.5716 9.95824 13.4528L7.47766 10.9722L14.8199 10.9731Z"
+            />
+          </svg>
+        </a>
+      </section>
     </main>
   </body>
 </html>

@@ -14,15 +14,12 @@
       margin-top: 0 !important;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      &.center {
-        justify-content: start;
-        section {
-          margin-top: 10vh;
-        }
+      justify-content: space-around;
+      &.evenly {
+        justify-content: space-evenly;
       }
       > section {
-        margin-top: 00px;
+        margin-top: 0px;
       }
     }
   }

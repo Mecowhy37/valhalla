@@ -1,62 +1,48 @@
 // File for Prajent
 @use "../abstracts" as *;
 
-.wrapper {
-  display: flex;
+.form-wrapper {
+  margin: 0 auto;
 }
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  background: rgb(255, 253, 253);
+  background: $white;
+  width: clamp(300px, 40vw, 350px);
   border-radius: $rounded;
-  width: max(40%, 250px);
-  margin: 0 auto;
+  padding: 1rem 12%;
   &__input {
-    background-color: #fff;
-    width: 80%;
+    width: 100%;
     padding: 8px;
-    margin: 10px;
+    margin-bottom: 0.9rem;
     border: none;
     border-bottom: 1px solid $text-color;
   }
-}
-
-.checkbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  label {
+    font-size: 0.9rem;
+    margin-right: auto;
+  }
+  &__checkbox {
+    font-size: 0.8rem;
+    margin-right: auto;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    label {
+      margin-left: 0.5rem;
+    }
+  }
+  p {
+    margin-top: 15%;
+  }
 }
 
 .hello {
-  text-align: center;
-  background: $background-color;
-  width: max(40%, 250px);
-  margin: 0 auto;
-  padding: 1rem;
-  &__buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    p {
-      padding: 0 0.5rem;
-    }
-  }
-  &__button {
-    border: none;
-    color: black;
-    background-color: #bb5807;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 2px;
-    align-items: center;
-    white-space: nowrap;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  gap: 1rem;
 }

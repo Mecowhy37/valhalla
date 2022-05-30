@@ -11,24 +11,30 @@
   <body class="layout layout--no-nav">
     <main>
       <!-- (Anzhela) create logo and text, scss file: _logo-box.scss, images in assets folder -->
-      <section>
-        <div class="container container--log-middle">
-          <img class="container__img" src="./assets/logo.png" alt="" />
+      <section class="container container--logo-middle">
+        <div class="container__text">
+          <h1 class="text">We will get you on a board right after you fill out this form</h1>
+        </div>
+        <div>
+          <img class="container__img container__img--bigger" src="./assets/logo-text-around.png" alt="" />
         </div>
       </section>
-      <section class="wrapper">
+      <section class="form-wrapper">
         <form action="" class="form">
+          <label for="email">email</label>
           <input class="form__input" type="text" id="email" name="email" placeholder="email" />
+          <label for="password">email</label>
           <input class="form__input" type="password" id="password" name="password" placeholder="Password" />
-          <div container="checkbox">
+          <div class="form__checkbox">
             <input type="checkbox" id="remember" name="remember" value="remember" />
             <label for="signup"> remember me</label>
           </div>
           <p>New here? <a href="signup.html">sign up</a> instead</p>
         </form>
       </section>
-      <section class="buttons">
-        <a href="/hello.html" class="icon-button">
+      <section class="buttons-wrap">
+        <a href="/hello.html" class="button button--icon left">
+          <span class="button__text">back</span>
           <svg viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="back">
             <path
               fill-rule="evenodd"
@@ -36,10 +42,9 @@
               d="M0.858234 3.70414C0.689958 3.70414 0.528575 3.77099 0.409586 3.88997C0.290597 4.00896 0.22375 4.17035 0.22375 4.33862C0.22375 4.5069 0.290597 4.66828 0.409586 4.78727C0.528575 4.90626 0.689959 4.97311 0.858234 4.97311L8.20051 4.97221L5.71992 7.45279C5.60109 7.57163 5.53432 7.73281 5.53432 7.90087C5.53432 8.06894 5.60109 8.23012 5.71992 8.34896C5.83876 8.46779 5.99994 8.53456 6.16801 8.53456C6.33607 8.53456 6.49725 8.46779 6.61609 8.34896L10.1783 4.7867C10.2972 4.66787 10.3639 4.50668 10.3639 4.33862C10.3639 4.17056 10.2972 4.00938 10.1783 3.89054L6.61609 0.328288C6.49725 0.209449 6.33607 0.142686 6.16801 0.142686C5.99994 0.142687 5.83876 0.20945 5.71992 0.328289C5.60108 0.447127 5.53432 0.608307 5.53432 0.77637C5.53432 0.944434 5.60108 1.10561 5.71992 1.22445L8.20051 3.70503L0.858234 3.70414Z"
             />
           </svg>
-          <span>back</span>
         </a>
-        <a href="/hello.html" class="icon-button icon-button--prm">
-          <span>Login</span>
+        <a href="/index.html" class="button button--prm button--icon right">
+          <span class="button__text">Login</span>
           <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               fill-rule="evenodd"
@@ -49,20 +54,6 @@
           </svg>
         </a>
       </section>
-
-      <!-- <section class="section">
-        <div class="section__icon">
-          <i class="fa fa-chevron-left"></i>
-          <a href="/hello.html">back</a>
-        </div>
-        <div>
-          <button class="section__button">
-            <a href="/index.html">
-              <span class="text">Login</span>
-            </a>
-          </button>
-        </div>
-      </section> -->
     </main>
   </body>
 </html>

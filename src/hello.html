@@ -8,26 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body class="layout layout--no-nav">
-    <main class="center">
-      <section>
-        <div class="container container--log-middle">
-          <img class="container__img" src="./assets/logo.png" alt="" />
-          <div class="container__text">
-            <p class="text">Hi and welcome in <br />Valhalla Kitchen!</p>
-          </div>
+    <main>
+      <section class="container">
+        <div class="container__text">
+          <h1 class="text">Hi and welcome in</h1>
         </div>
+        <img class="container__img container__img--bigger" src="./assets/logo-text-around.png" alt="" />
       </section>
       <section class="hello">
         <p>If you'd like to save and share recipes,</p>
-        <div class="hello__buttons">
-          <a href="/signup.html">
-            <button class="hello__button">Sign up</button>
+        <section class="buttons-wrap buttons-wrap--narrow">
+          <a href="/signup.html" class="button button--prm">
+            <span class="button__text">Sign up</span>
           </a>
-          <p>or</p>
-          <a href="/login.html">
-            <button class="hello__button">Login</button>
+          <span>or</span>
+          <a href="/login.html" class="button button--prm">
+            <span class="button__text">Login</span>
           </a>
-        </div>
+        </section>
         <p>
           <a href="/index.html">I want to look<br />around first.</a>
         </p>
