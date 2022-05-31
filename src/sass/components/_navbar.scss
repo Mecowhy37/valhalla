@@ -1,4 +1,5 @@
 @use "../abstracts" as *;
+@use "../base" as *;
 
 .nav {
   top: 0;
@@ -60,5 +61,12 @@
       width: min-content;
       cursor: pointer;
     }
+  }
+}
+
+// heart color - fill
+nav {
+  .fa-fill {
+    color: $text-color;
   }
 }
