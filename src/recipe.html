@@ -42,7 +42,6 @@
       <div>
         <ul class="breadcrumb">
           <li><a href="./index.html">Home page</a></li>
-          <li><a href="#">Recipes page</a></li>
           <li>Recipe page</li>
         </ul>
       </div>
@@ -69,7 +68,7 @@
             <div class="img-shadow"></div>
           </div>
         </div>
-        <div class="grid-container">
+        <section class="grid-container">
           <div class="grid-container__item recipe__attributes">
             <i class="fa fa-leaf" aria-hidden="true"></i>
             <i class="fa fa-leaf" aria-hidden="true"></i>
@@ -88,16 +87,18 @@
             <i class="fa fa-heart-o" aria-hidden="true"></i>
             <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
         </div>
-    </div>
-    <div class="recipe__description">
-        <h3>Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Nisl vel pretium lectus quam. Consequat mauris nunc congue nisi vitae suscipit tellus. Integer eget aliquet nibh praesent tristique magna sit amet. 
-          Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Euismod in pellentesque massa placerat. Eu volutpat odio facilisis mauris sit amet. 
-          Pharetra magna ac placerat vestibulum lectus mauris ultrices. Diam phasellus vestibulum lorem sed risus ultricies. Eu volutpat odio facilisis mauris sit amet.
-          Id ornare arcu odio ut sem nulla. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Velit ut tortor pretium viverra.</p>
-    </div>
-        </section>
+      </section>
+      <section>
+        <div class="recipe__description">
+          <h3>Description</h3>
+          <p>
+            Done correctly, a classic tiramisù can be transcendent. A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù relies heavily on the quality of its ingredients. If you
+            don't have a barista setup at home, pick up the espresso at a local coffee shop, or use strongly brewed coffee. As for the ladyfingers, make your own or buy them, but keep in mind that store-bought varieties can range from soft and spongy
+            (like angel food cake) to hard and crunchy (like biscotti). Both kinds will work here, but if you're using the softer variety, stick to a light brushing of espresso, instead of a deep dip.
+          </p>
+        </div>
+      </section>   
+
         <section class="recipe-ingredients">
           <h3>Ingredients</h3>
           <ul class="recipe-ingredients__list">
@@ -116,39 +117,65 @@
           </ul>
           <button class="recipe-ingredients__btn"><i class="fa fa-copy"></i> Copy</button>
       </section>
-      <section>
-        <div class="recipe-steps">
-        <h3>Lets make it step by step</h3>
-        <div class="recipe__step">
-          <h3>Step 1</h3>
-          <p>Using an electric mixer in a medium bowl, whip together egg yolks and ¼ cup/50 grams sugar until very pale yellow and about tripled in volume. A slight ribbon should fall from the beaters (or whisk attachment) when lifted from the bowl. Transfer mixture to a 
-            large bowl, wiping out the medium bowl used to whip the yolks and set aside. </p>
-          </div>
-          <div class="recipe__step">
-            <h3>Step 2</h3>
-            <p>In the medium bowl, whip cream and remaining ¼ cup/50 grams sugar until it creates soft-medium peaks. Add mascarpone and continue to whip until it creates a soft, spreadable mixture with medium peaks. Gently fold the mascarpone mixture 
-              into the sweetened egg yolks until combined. </p>
-            </div>
+      <h3 class="steps-header">Lets make it step by step</h3>
+      <section class="steps">
+        <div class="steps__card">
+          <img class="steps__img-box" src="./assets/step1.png"/>
+          <h3 >Prepare the base</h3>
+          <p>Using an electric mixer in a medium bowl, whip together egg yolks and ¼ cup/50 grams sugar until very pale yellow and about tripled in volume. 
+          </p>
+          <ol class="steps__instructions">
+            <li class="steps_step">whip together egg yolks and ¼ cup/50 grams sugar</li>
+            <li class="steps_step">transfer mixture to a 
+              large bowl</li>
+          </ol>
+          <h3 class="advice">Chef's advice</h3>
+          <p class="advice-text">
+            Don't soak! Quickly dip the cookies into your coffee or liquor. ...
+          </p>
         </div>
-        </section>
-          <section class="addReview">
-            <div class="row">
-                        <div class="panel-body">
-                            <textarea placeholder="Write your comment here!" class="textarea"></textarea>
-                            <form class="form-inline">
-                                <div class="box-top__reviews">
-                                  <i class="fas fa fa-star"></i>
-                                  <i class="fas fa fa-star"></i>
-                                  <i class="fas fa fa-star"></i>
-                                  <i class="fas fa fa-star"></i>
-                                  <i class="far fa fa-star"></i><!--Empty star-->
-                              </div>
-                              <button class="btn pull-right button" type="button">Submit</button>
-                            </form>
-                    </div>
-            </div>
-        </section>
-     
+
+        <div class="steps__card">
+          <img class="steps__img-box" src="./assets/step2.png"/>
+          <h3 >Prepare cream</h3>
+          <p>Add mascarpone and continue to whip until it creates a soft, spreadable mixture with medium peaks. Gently fold the mascarpone mixture 
+            into the sweetened egg yolks until combined.
+          </p>
+          <ol class="steps__instructions">
+            <li class="steps_step">Cover the base with foil</li>
+            <li class="steps_step">put in the frige</li>
+          </ol>
+          <h3 class="advice">Chef's advice</h3>
+          <p class="advice-text">
+            Mix up your flavors. Keep it classic with fresh brewed (or instant) espresso or switch things up with a liquor like rum, amaretto, sambucca or Irish cream.
+          </p>
+          </div>
+        </div>
+      </section>  
+      <section class="threebuttons">
+        <button type="button" class="button"><i  id="item2" class="fa fa-heart-o" aria-hidden="true"></i> Saved</button>
+        <button type="button" class="button"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
+        <button type="button" class="button"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
+      </section>    
+      <section class="addReview">
+        <div class="row">
+                    <div class="panel-body">
+                        <textarea placeholder="Write your comment here!" class="textarea"></textarea>
+                        <form class="form-inline">
+                            <div class="box-top__reviews">
+                              <i class="fas fa fa-star"></i>
+                              <i class="fas fa fa-star"></i>
+                              <i class="fas fa fa-star"></i>
+                              <i class="fas fa fa-star"></i>
+                              <i class="far fa fa-star"></i><!--Empty star-->
+                          </div>
+                          <button class="btn pull-right button" type="button">Submit</button>
+                        </form>
+                </div>
+        </div>
+    </section>
+   
+  
       <!--Testimonials------------------->
     <section id="review-box">
       <!--heading--->
@@ -278,11 +305,6 @@
               </div>
           </div>
       </div>
-  </section>
-  <section class="threebuttons">
-    <button type="button" class="button"><i  id="item2" class="fa fa-heart-o" aria-hidden="true"></i> Saved</button>
-    <button type="button" class="button"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
-    <button type="button" class="button"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
   </section>
     </main>
   </body>
