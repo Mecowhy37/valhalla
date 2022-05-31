@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Recipe</title>
+  </head>
+  <body class="layout">
+    <nav class="nav">
+      <div class="nav__inner">
+        <label for="open" class="nav__item fa fa-bars burger"></label>
+        <input type="checkbox" id="open" class="nav--left openner" />
+        <div class="nav__side to-open">
+          <ul class="nav__side__wrapper">
+            <li class="nav__side__link">
+              <a href="/index.html">home</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/hello.html">hello</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/login.html">login</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/signup.html">signup</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__item nav__logo"><img src="" alt="" />LOGO</div>
+
+        <div class="nav--right">
+          <div class="nav__item fa fa-heart-o"></div>
+          <div class="nav__item fa fa-user"></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <ul class="breadcrumb">
+          <li><a href="./index.html">Home page</a></li>
+          <li><a href="#">Recipes page</a></li>
+          <li>Recipe page</li>
+        </ul>
+      </div>
+      <section class="recipe">
+        <div class="recipe-desktop-grid">
+          <div class="recipe__header">
+            <div class="content-hidden span3">
+              <span class="card-author">John Smith</span>
+              <h3>New Tiramisu Recipe</h3>
+              <span class="card-description">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+            </div>
+            <h3>Tiramisu Recipe</h3>
+            <span>by John Smith</span>
+            <div class="recipe__stars">
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star-o"></i>
+            </div>
+          </div>
+          <div class="recipe__image">
+            <img class="recipe__image" src="./assets/recipe img.jpg" alt="recipeimg" shadow />
+            <div class="img-shadow"></div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-container__item recipe__attributes">
+            <i class="fa fa-leaf" aria-hidden="true"></i>
+            <i class="fa fa-leaf" aria-hidden="true"></i>
+            <i class="fa fa-leaf" aria-hidden="true"></i>
+            <i class="fa fa-leaf" aria-hidden="true"></i>
+          </div>
+          <div class="grid-container__item">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <a>45min.</a>
+          </div>
+          <div class="grid-container__item">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <a>6 to 8 servings</a>
+          </div>
+        </section>
+        <section class="recipe-ingredients">
+          <h3>Ingredients</h3>
+          <ul class="recipe-ingredients__list">
+            <h4>For the Cream</h4>
+            <li><label><input type="checkbox">4 large egg yolks</label></li>
+            <li><label><input type="checkbox">½ cup/100 grams granulated sugar, divided</label></li>
+            <li><label><input type="checkbox">¾ cup heavy cream</label></li>
+            <li><label><input type="checkbox">1 cup/227 grams mascarpone (8 ounces)</label></li>
+            </ul>
+            <ul class="recipe-ingredients__list">
+            <h4>For the Assembly</h4>
+            <li><label><input type="checkbox"> 1¾ cups good espresso or very strong coffee</label></li>
+            <li><label><input type="checkbox">2 tablespoons rum or cognac</label></li>
+            <li><label><input type="checkbox">2 tablespoons unsweetened cocoa powder</label></li>
+            <li><label><input type="checkbox"> 1 to 2ounces bittersweet chocolate, for shaving (optional)</label></li>
+          </ul>
+          <button class="recipe-ingredients__btn"><i class="fa fa-copy"></i> Copy</button>
+      </section>
+      <section>
+        <div class="recipe-steps">
+        <h3>Lets make it step by step</h3>
+        <div class="recipe__step">
+          <h3>Step 1</h3>
+          <p>Using an electric mixer in a medium bowl, whip together egg yolks and ¼ cup/50 grams sugar until very pale yellow and about tripled in volume. A slight ribbon should fall from the beaters (or whisk attachment) when lifted from the bowl. Transfer mixture to a 
+            large bowl, wiping out the medium bowl used to whip the yolks and set aside. </p>
+          </div>
+          <div class="recipe__step">
+            <h3>Step 2</h3>
+            <p>In the medium bowl, whip cream and remaining ¼ cup/50 grams sugar until it creates soft-medium peaks. Add mascarpone and continue to whip until it creates a soft, spreadable mixture with medium peaks. Gently fold the mascarpone mixture 
+              into the sweetened egg yolks until combined. </p>
+            </div>
+        </div>
+        <div class="recipe__description">
+          <h3>Description</h3>
+          <p>
+            Done correctly, a classic tiramisù can be transcendent. A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù relies heavily on the quality of its ingredients. If you
+            don't have a barista setup at home, pick up the espresso at a local coffee shop, or use strongly brewed coffee. As for the ladyfingers, make your own or buy them, but keep in mind that store-bought varieties can range from soft and spongy
+            (like angel food cake) to hard and crunchy (like biscotti). Both kinds will work here, but if you're using the softer variety, stick to a light brushing of espresso, instead of a deep dip.
+          </p>
+        </div>
+        <div class="recipe__popular-review">
+          <h3>Popular review</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star-o"></i>
+        </div>
+      </section>
+      <section class="recipe-ingredients">
+        <h3>Ingredients</h3>
+        <ul class="recipe-ingredients__list">
+          <h4>For the Cream</h4>
+          <li>
+            <label><input type="checkbox" />4 large egg yolks</label>
+          </li>
+          <li>
+            <label><input type="checkbox" />½ cup/100 grams granulated sugar, divided</label>
+          </li>
+          <li>
+            <label><input type="checkbox" />¾ cup heavy cream</label>
+          </li>
+          <li>
+            <label><input type="checkbox" />1 cup/227 grams mascarpone (8 ounces)</label>
+          </li>
+        </ul>
+        <ul class="recipe-ingredients__list">
+          <h4>For the Assembly</h4>
+          <li>
+            <label><input type="checkbox" /> 1¾ cups good espresso or very strong coffee</label>
+          </li>
+          <li>
+            <label><input type="checkbox" />2 tablespoons rum or cognac</label>
+          </li>
+          <li>
+            <label><input type="checkbox" />2 tablespoons unsweetened cocoa powder</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> 1 to 2ounces bittersweet chocolate, for shaving (optional)</label>
+          </li>
+        </ul>
+        <button class="recipe-ingredients__btn"><i class="fa fa-copy"></i> Copy</button>
+      </section>
+      <!-- <section class="steps">
+        <div class="steps__card">
+          <div class="steps__image-box">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="steps__card">
+          <div class="steps__image-box">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="steps__card">
+          <div class="steps__image-box">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section> -->
+    </main>
+  </body>
+</html>
