@@ -1,53 +1,47 @@
+@use "../mq";
+@use "../abstracts" as *;
+@use "../base" as *;
+
+
 .user-info {
   text-align: center;
 
   h1{
-    margin-top: 1rem; 
+    margin-top: 1.5rem; 
+    color:$text-color;
+    font-family: $font-family-open-sans;
   }
   h3{
     margin-top: 1rem;
+    font-family: $font-family-open-sans;
   }
 &__avatar{
   vertical-align: middle;
   width: 50%;
   height:auto;
-  border-radius: 50%;
+  border-radius: 20%;
   margin-top: 1rem;
 
 }
 &__stars{
   margin-top: 0.8rem;
+  color: $accent-color;
+  i{
+    color: $action-color;
+  }
 }
 &__text{
   margin: 0.5rem 2.5rem;
+  font-family: $font-family-roboto;
 }
 &__buttons{
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   
-}
-.button1{
-  font-size:1rem;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px 15px;
-  text-align: center;
-  border: 2px solid #3f6c63;
-  border-radius:25rem;
-
+  
 }
 
-.button2{
-  background-color: #bb5807;
-  color:  white;
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px 15px;
-  text-align: center;
-  border-radius: 25rem;
-}
 }
 
 
@@ -56,13 +50,75 @@
       float: left;
       margin: 0 0 0 0.5rem;
       width: 15rem;
-      padding: 3rem;
+      padding: 2rem;
       
   }
-  .user-info{
-    margin-top: 2rem;
+  div.user-info__info{
+    text-align: initial;
+    margin-top: 2.5rem;    
   }
+  }
+
+//buttons
+.button-1 {
+  background-color: $background;
+  border-radius: 8px;
+  border:1px solid #93a78c;
+  box-sizing: border-box;
+  color: $text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family:$font-family-open-sans;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+.button-1:hover,
+.button-1:focus {
+  background-color: $background;
+}
+.button-2 {
+  background-color: $accent-color;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family:$font-family-open-sans;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
-
+.button-2:hover,
+.button-2:focus {
+  background-color: $action-color;
+}
