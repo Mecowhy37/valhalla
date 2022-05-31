@@ -3,14 +3,19 @@
 @use "../base" as *;
 
 .recipe-ingredients{
-    text-align: center;
+    text-align: left;
     display: block;
     margin-right: 40px;
     width: 100%;
     flex-direction: column;
-    h3{
-        font-family: $font-family-roboto;
+  h3{
+        font-family: $font-family-open-sans;
         font-size: 1.2rem;
+        text-align: center;
+    }
+    h4{
+      font-family: $font-family-open-sans;
+      margin-left: 1rem;
     }
  &__list{
     list-style-type:none;
@@ -28,10 +33,13 @@
         color: $text-color;
     }
     li{
-        border-bottom:1px solid $action-color;
         padding: 5px;
  }
+ input{
+   margin:0.5rem;
+ }
  &__btn {
+    margin:0 2rem;
     background-color:$accent-color;
     border: none;
     color: white;
@@ -45,6 +53,7 @@
     }
   }
 }
+
 
 
   /* Extra small devices (phones, 600px and down) */
