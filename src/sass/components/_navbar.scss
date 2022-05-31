@@ -8,6 +8,7 @@
   flex-direction: row;
   position: fixed;
   background-color: $background-opaque;
+  z-index: 100;
   &__inner {
     display: grid;
     margin: 0 auto;
