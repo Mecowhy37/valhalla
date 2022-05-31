@@ -28,10 +28,10 @@
     padding: 0 2.5vh;
   }
   &--prm {
-    background-color: $action-green;
-    color: $white !important;
+    background-color: $action-color;
+    color: $white-color !important;
     svg {
-      fill: $white !important;
+      fill: $white-color !important;
     }
   }
   &--icon {

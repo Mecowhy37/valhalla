@@ -7,7 +7,7 @@
   justify-content: space-between;
   width: 80%;
   height: min-content;
-  background-color: $white;
+  background-color: $white-color;
   border-radius: 3rem;
   padding: clamp(5px, 1vw, 10px) calc(clamp(5px, 1vw, 10px) * 2);
   &__icon {
