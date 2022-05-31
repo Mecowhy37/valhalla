@@ -68,6 +68,11 @@
         flex-wrap: wrap;
         width: 100%;
         gap: 1rem;
+        .card {
+            &__footer .fa-trash {
+                float: right;
+              }
+        }
     }
     @include mq.mq($from: tablet) {
         .card {
