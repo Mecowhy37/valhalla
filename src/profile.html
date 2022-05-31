@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/15f6459f79.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/15f6459f79.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <script src="https://kit.fontawesome.com/15f6459f79.js" crossorigin="anonymous"></script> -->
@@ -22,10 +19,16 @@
         <div class="nav__side to-open">
           <ul class="nav__side__wrapper">
             <li class="nav__side__link">
-              <a href="/index.html">home</a>
+              <a href="/home.html">home</a>
             </li>
             <li class="nav__side__link">
-              <a href="/hello.html">hello</a>
+              <a href="/profile.html">profile</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/index.html">hello</a>
+            </li>
+            <li class="nav__side__link">
+              <a href="/saved-recipe.html">saved recipes</a>
             </li>
             <li class="nav__side__link">
               <a href="/login.html">login</a>
@@ -36,204 +39,185 @@
           </ul>
         </div>
 
-        <div class="nav__item nav__logo">
-          <img src="./assets/logo-test1.png" alt="">
-        </div>
+        <a class="nav__item nav__logo" href="/home.html">
+          <img src="./assets/logo-test1.png" alt="" />
+        </a>
 
         <div class="nav--right">
-          <div class="nav__item fa fa-heart-o"></div>
-          <div class="nav__item fa fa-user"></div>
+          <a class="nav__item fa fa-heart-o accent-orange" href="/saved-recipe.html"></a>
+          <a class="nav__item fa fa-user" href="/profile.html"></a>
         </div>
       </div>
     </nav>
     <main>
-        <section class="section-profile">
-            <div class="profile">
-                <h2 class="title">My Account</h2>
-                <div class="profile__img shadow">
-                    <img src="./assets/sussana.jpg" alt="">
+      <section class="section-profile">
+        <div class="profile">
+          <h2 class="title">My Account</h2>
+          <div class="profile__img shadow">
+            <img src="./assets/sussana.jpg" alt="" />
+          </div>
+          <div class="profile__name">
+            <p>Sussana</p>
+          </div>
+          <div>
+            <div class="profile__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="profile__bio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti assumenda fugit consequuntur, voluptate impedit recusandae nulla voluptatem, nemo in totam corporis molestias aut dolores sequi sunt sapiente magni reiciendis? Nisi.</p>
+          </div>
+          <div class="profile__buttons">
+            <a href="/creat-recipe.html">
+              <button>Create recipe</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- View your post -->
+      <section class="section-profile-post">
+        <h2 class="title">View your post</h2>
+        <div class="section-card">
+          <div class="card">
+            <div class="card__img shadow">
+              <img src="./assets/photo-test2.jpg" alt="" />
+            </div>
+            <div class="card__content shadow">
+              <div class="card__content--wrapper">
+                <div class="card__header">
+                  <h2 class="card__title">Pancakes</h2>
+                  <p class="card__by">by Adam</p>
+                  <p class="card__tags">Nordic Pastry Breakfast</p>
                 </div>
-                <div class="profile__name">
-                    <p>Sussana</p>
+                <div class="card__description">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.</p>
                 </div>
                 <div>
-                    <div class="profile__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="profile__bio">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Corrupti assumenda fugit consequuntur, voluptate impedit 
-                        recusandae nulla voluptatem, nemo in totam corporis molestias 
-                        aut dolores sequi sunt sapiente magni reiciendis? Nisi.
-                    </p>
-                </div>
-                <div class="profile__buttons">
-                    <button>Create recipe</button>
-                </div>
-            </div>
-        </section>
-        <!-- View your post -->
-        <section class="section-profile-post">
-          <h2 class="title">View your post</h2>
-          <div class="section-card">
-            <div class="card">
-              <div class="card__img shadow">
-                <img src="./assets/photo-test2.jpg" alt="">
-              </div>
-              <div class="card__content shadow">
-      
-                <div class="card__content--wrapper">
-                  <div class="card__header">
-                    <h2 class="card__title">Pancakes</h2>
-                    <p class="card__by">by Adam</p>
-                    <p class="card__tags">Nordic Pastry Breakfast</p>
+                  <div class="card__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
                   </div>
-                  <div class="card__description">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, 
-                      animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, 
-                      suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.
-                    </p>
-                  </div>
-                  <div>
-                    <div class="card__stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="card__footer">
-                      <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
-                      <i class="fa-solid fa-trash"></i>
-                    </div>
+                  <div class="card__footer">
+                    <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
+                    <i class="fa-solid fa-trash"></i>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card">
-                <div class="card__img shadow">
-                  <img src="./assets/photo-test2.jpg" alt="">
-                </div>
-                <div class="card__content shadow">
-        
-                  <div class="card__content--wrapper">
-                    <div class="card__header">
-                      <h2 class="card__title">Pancakes</h2>
-                      <p class="card__by">by Adam</p>
-                      <p class="card__tags">Nordic Pastry Breakfast</p>
-                    </div>
-                    <div class="card__description">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, 
-                        animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, 
-                        suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.
-                      </p>
-                    </div>
-                    <div>
-                      <div class="card__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="card__footer">
-                        <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
-                        <i class="fa-solid fa-trash"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__img shadow">
-                  <img src="./assets/photo-test2.jpg" alt="">
-                </div>
-                <div class="card__content shadow">
-        
-                  <div class="card__content--wrapper">
-                    <div class="card__header">
-                      <h2 class="card__title">Pancakes</h2>
-                      <p class="card__by">by Adam</p>
-                      <p class="card__tags">Nordic Pastry Breakfast</p>
-                    </div>
-                    <div class="card__description">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, 
-                        animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, 
-                        suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.
-                      </p>
-                    </div>
-                    <div>
-                      <div class="card__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="card__footer">
-                        <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
-                        <i class="fa-solid fa-trash"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__img shadow">
-                  <img src="./assets/photo-test2.jpg" alt="">
-                </div>
-                <div class="card__content shadow">
-        
-                  <div class="card__content--wrapper">
-                    <div class="card__header">
-                      <h2 class="card__title">Pancakes</h2>
-                      <p class="card__by">by Adam</p>
-                      <p class="card__tags">Nordic Pastry Breakfast</p>
-                    </div>
-                    <div class="card__description">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, 
-                        animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, 
-                        suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.
-                      </p>
-                    </div>
-                    <div>
-                      <div class="card__stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <div class="card__footer">
-                        <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
-                        <i class="fa-solid fa-trash"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
           </div>
-          <div class="seemore-btn">
-            <button class="x">See more</button>
+          <div class="card">
+            <div class="card__img shadow">
+              <img src="./assets/photo-test2.jpg" alt="" />
+            </div>
+            <div class="card__content shadow">
+              <div class="card__content--wrapper">
+                <div class="card__header">
+                  <h2 class="card__title">Pancakes</h2>
+                  <p class="card__by">by Adam</p>
+                  <p class="card__tags">Nordic Pastry Breakfast</p>
+                </div>
+                <div class="card__description">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.</p>
+                </div>
+                <div>
+                  <div class="card__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="card__footer">
+                    <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+
+          <div class="card">
+            <div class="card__img shadow">
+              <img src="./assets/photo-test2.jpg" alt="" />
+            </div>
+            <div class="card__content shadow">
+              <div class="card__content--wrapper">
+                <div class="card__header">
+                  <h2 class="card__title">Pancakes</h2>
+                  <p class="card__by">by Adam</p>
+                  <p class="card__tags">Nordic Pastry Breakfast</p>
+                </div>
+                <div class="card__description">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.</p>
+                </div>
+                <div>
+                  <div class="card__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="card__footer">
+                    <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img shadow">
+              <img src="./assets/photo-test2.jpg" alt="" />
+            </div>
+            <div class="card__content shadow">
+              <div class="card__content--wrapper">
+                <div class="card__header">
+                  <h2 class="card__title">Pancakes</h2>
+                  <p class="card__by">by Adam</p>
+                  <p class="card__tags">Nordic Pastry Breakfast</p>
+                </div>
+                <div class="card__description">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, animi! Cumque consequatur saepe qui nam expedita accusamus in nemo nisi, suscipit sit ullam itaque velit consectetur eveniet corporis, excepturi aliquid.</p>
+                </div>
+                <div>
+                  <div class="card__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="card__footer">
+                    <i class="fa-regular fa-clock fa-1x"></i><span class="card__time">35 min</span>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seemore-btn">
+          <button class="x">See more</button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer">
         <div class="footer__logo">
-          <img src="./assets/logo.png" alt="">
+          <img src="./assets/logo.png" alt="" />
         </div>
         <div class="footer__links">
           <a href="">About</a>
           <a href="">Contat</a>
-        </div>  
+        </div>
         <div class="footer__some">
           <div class="footer__some--title">
             <p>Follow us</p>
@@ -248,8 +232,6 @@
           </div>
         </div>
       </div>
-
-
     </footer>
   </body>
 </html>

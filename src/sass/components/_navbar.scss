@@ -17,6 +17,8 @@
     padding: 0 2%;
   }
   &__item {
+    cursor: pointer;
+    text-decoration: none;
     &::before {
       font-size: 1.7rem;
     }
@@ -54,13 +56,22 @@
       align-items: center;
       justify-content: space-around;
       list-style-type: none;
-      height: 200px;
+      height: 270px;
       width: 50%;
       font-size: 1.5rem;
     }
     &__link {
       width: min-content;
       cursor: pointer;
+      a {
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      &:hover {
+        a {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
