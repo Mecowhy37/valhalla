@@ -88,7 +88,6 @@
             &__content--wrapper {
                 border-radius: 0 1rem 1rem 0;
             }
-            
         }
     }
     @include mq.mq($from: desktop) {
@@ -101,3 +100,22 @@
         }
     }
 }
+
+.seemore-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    button {
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 1rem;
+        background: $action-color;
+        font-family: $font-family-roboto;
+        font-size: 15px;
+        font-weight: 500;
+        color: $white-color;
+    }
+}
+
+
