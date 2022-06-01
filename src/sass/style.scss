@@ -1,4 +1,4 @@
-@use "mq" as * with (
+@use "./mq" as * with (
   $breakpoints: (
     mobile: 320px,
     tablet: 740px,
